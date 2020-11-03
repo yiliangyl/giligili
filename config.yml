@@ -1,0 +1,10 @@
+database:
+  username: root
+  password: 123456
+  dbName: giligili
+  dbHost: localhost
+  dbPort: 3306
+
+HttpPort: :8081
+
+AppMode: debug
