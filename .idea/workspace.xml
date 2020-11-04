@@ -26,7 +26,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75e99760-07c7-4b66-9b55-bd65715844f7" name="Default Changelist" comment="ok" />
+    <list default="true" id="75e99760-07c7-4b66-9b55-bd65715844f7" name="Default Changelist" comment="ok">
+      <change afterPath="$PROJECT_DIR$/api/userHandler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/session.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/user_login_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/user_register_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/errmsg/errmsg.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/setting.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/setting.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/router.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,15 +76,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\go\code\src\giligili\utils" />
       <recent name="D:\go\code\src\giligili" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\go\code\src\giligili\utils\errmsg" />
+      <recent name="D:\go\code\src\giligili\utils" />
       <recent name="D:\go\code\src\giligili" />
       <recent name="D:\go\code\src\giligili\config" />
     </key>

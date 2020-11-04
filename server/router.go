@@ -14,6 +14,8 @@ func Router()  {
 	v1 := r.Group("/api/v1")
 	{
 		v1.POST("/ping", api.TestHandler)
+		v1.POST("/register", api.UserRegister)
+		v1.POST("/login", api.UserLogin)
 	}
 
 	HttpPort := viper.GetString("HttpPort")

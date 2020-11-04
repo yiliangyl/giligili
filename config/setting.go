@@ -39,7 +39,7 @@ func InitDB() {
 		dbHost,
 		dbPort,
 		dbName,
-		)
+	)
 
 	model.Database(dns)
 }

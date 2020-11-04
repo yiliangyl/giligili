@@ -1,13 +1,14 @@
 package api
 
 import (
+	"giligili/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
 func TestHandler(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"code": 200,
-		"message": "hello",
-	})
+	c.JSON(
+		http.StatusOK,
+		utils.CommonResponse(200, "pong", nil),
+	)
 }
