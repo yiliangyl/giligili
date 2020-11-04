@@ -27,20 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75e99760-07c7-4b66-9b55-bd65715844f7" name="Default Changelist" comment="ok">
-      <change afterPath="$PROJECT_DIR$/api/videoHandler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/create_video_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/delete_video_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/list_video_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/show_video_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/update_video_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/commonHandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/session.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/session.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/user_register_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/user_register_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/errmsg/errmsg.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errmsg/errmsg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
