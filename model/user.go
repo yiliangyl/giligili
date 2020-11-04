@@ -38,6 +38,6 @@ func (user *User) SetPassword(password string) error {
 
 // 校验密码
 func (user *User) CheckPassword(password string) bool {
-	err := bcrypt.CompareHashAndPassword([]byte(password), []byte(user.PasswordDigest))
+	err := bcrypt.CompareHashAndPassword([]byte(user.PasswordDigest), []byte(password))
 	return err == nil
 }

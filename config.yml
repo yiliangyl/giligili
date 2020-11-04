@@ -8,3 +8,5 @@ database:
 HttpPort: :8081
 
 AppMode: debug
+
+SessionSecret: setOnProduction

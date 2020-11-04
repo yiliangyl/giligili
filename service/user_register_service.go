@@ -7,11 +7,11 @@ import (
 )
 
 type UserRegisterService struct {
-	Username string `json:"username" form:"username"`
-	Nickname string `json:"nickname" form:"nickname"`
-	Password string `json:"password" form:"password"`
+	Username        string `json:"username" form:"username"`
+	Nickname        string `json:"nickname" form:"nickname"`
+	Password        string `json:"password" form:"password"`
 	PasswordConfirm string `json:"password_confirm" form:"password_confirm"`
-	Avatar string `json:"avatar" form:"avatar"`
+	Avatar          string `json:"avatar" form:"avatar"`
 }
 
 func (service *UserRegisterService) valid() utils.Response {
@@ -36,7 +36,7 @@ func (service *UserRegisterService) Register() utils.Response {
 	user := model.User{
 		Username: service.Username,
 		Nickname: service.Nickname,
-		Avatar: service.Avatar,
+		Avatar:   service.Avatar,
 	}
 
 	if errResponse := service.valid(); errResponse.Code != 0 {
