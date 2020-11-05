@@ -12,7 +12,7 @@ type User struct {
 	Nickname       string `json:"nickname"`
 	Avatar         string `json:"avatar"`
 	// 个性签名
-	Signature      string `json:"signature"`
+	Signature string `json:"signature"`
 }
 
 const (
@@ -20,7 +20,7 @@ const (
 	PasswordCost = 15
 )
 
-func GetUserById(id int) (User, error) {
+func GetUserById(id interface{}) (User, error) {
 	var user User
 	err := DB.Where("id = ?", id).First(&user).Error
 	return user, err

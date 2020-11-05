@@ -7,13 +7,14 @@ import (
 	"github.com/spf13/viper"
 )
 
-func Router()  {
+func Router() {
 	AppMode := viper.GetString("AppMode")
 	gin.SetMode(AppMode)
 	r := gin.Default()
 
 	secret := viper.GetString("SessionSecret")
 	r.Use(middleware.Session(secret))
+	r.Use(middleware.CurrentUser())
 
 	v1 := r.Group("/api/v1")
 	{
@@ -23,15 +24,25 @@ func Router()  {
 		{
 			user.POST("/register", api.UserRegister)
 			user.POST("/login", api.UserLogin)
+			auth := user.Group("/")
+			auth.Use(middleware.AuthRequired())
+			{
+				auth.GET("/me", api.UserMe)
+				auth.DELETE("/logout", api.Logout)
+			}
 		}
 
 		video := v1.Group("/video")
 		{
-			video.POST("/create", api.CreateVideo)
 			video.GET("/show/:id", api.ShowVideo)
 			video.GET("/list", api.ListVideo)
-			video.PUT("/update/:id", api.UpdateVideo)
-			video.DELETE("/delete/:id", api.DeleteVideo)
+			auth := video.Group("/")
+			auth.Use(middleware.AuthRequired())
+			{
+				auth.POST("/create", api.CreateVideo)
+				auth.PUT("/update/:id", api.UpdateVideo)
+				auth.DELETE("/delete/:id", api.DeleteVideo)
+			}
 		}
 	}
 
