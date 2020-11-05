@@ -2,6 +2,7 @@ package config
 
 import (
 	"fmt"
+	"giligili/cache"
 	"giligili/model"
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
@@ -10,6 +11,7 @@ import (
 func Init() {
 	InitViper()
 	InitDB()
+	//InitRedis()
 }
 
 func InitViper() {
@@ -42,4 +44,12 @@ func InitDB() {
 	)
 
 	model.Database(dns)
+}
+
+func InitRedis() {
+	addr := viper.GetString("redis.addr")
+	pwd := ""
+	db := viper.GetInt("redis.db")
+
+	cache.Redis(addr, pwd, db)
 }

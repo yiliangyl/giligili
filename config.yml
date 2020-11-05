@@ -10,3 +10,8 @@ HttpPort: :8081
 AppMode: debug
 
 SessionSecret: setOnProduction
+
+redis:
+  addr: 127.0.0.1:6379
+  pwd:
+  db: 0
