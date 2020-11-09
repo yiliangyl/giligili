@@ -36,6 +36,7 @@ func Router() {
 		{
 			video.GET("/show/:id", api.ShowVideo)
 			video.GET("/list", api.ListVideo)
+			video.GET("/rank", api.VideoRank)
 			auth := video.Group("/")
 			auth.Use(middleware.AuthRequired())
 			{

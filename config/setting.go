@@ -11,7 +11,7 @@ import (
 func Init() {
 	InitViper()
 	InitDB()
-	//InitRedis()
+	InitRedis()
 }
 
 func InitViper() {
@@ -48,7 +48,7 @@ func InitDB() {
 
 func InitRedis() {
 	addr := viper.GetString("redis.addr")
-	pwd := ""
+	pwd := viper.GetString("redis.pwd")
 	db := viper.GetInt("redis.db")
 
 	cache.Redis(addr, pwd, db)

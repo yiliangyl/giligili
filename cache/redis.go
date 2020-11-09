@@ -18,6 +18,7 @@ func Redis(addr string, pwd string, db int) {
 	_, err := redis.Ping().Result()
 	if err != nil {
 		fmt.Printf("redis connect failed, err: %v", err)
+		return
 	}
 
 	RedisClient = redis

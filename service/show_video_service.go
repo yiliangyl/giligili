@@ -16,5 +16,7 @@ func (service *ShowVideoService) ShowVideo(id int) utils.Response {
 		return utils.ErrResponse(errmsg.VIDEO_NON_EXISTED, errmsg.GetErrMsg(errmsg.VIDEO_NON_EXISTED))
 	}
 
+	video.AddView()
+
 	return utils.CommonResponse(errmsg.SUCCESS, errmsg.GetErrMsg(errmsg.SUCCESS), video)
 }

@@ -22,6 +22,9 @@ const (
 	VIDEO_NON_EXISTED   = 4002
 	LIST_DISPLAY_FALIED = 4003
 	VIDEO_DELETE_FAILED = 4004
+
+	// 数据库相关
+	DATABASE_OPERATE_FAILED = 5001
 )
 
 var codeMsg = map[int]string{
@@ -42,6 +45,8 @@ var codeMsg = map[int]string{
 	VIDEO_NON_EXISTED:   "视频不存在",
 	LIST_DISPLAY_FALIED: "视频列表展示失败",
 	VIDEO_DELETE_FAILED: "视频删除失败",
+
+	DATABASE_OPERATE_FAILED: "数据库操作失败",
 }
 
 func GetErrMsg(code int) string {
