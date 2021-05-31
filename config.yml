@@ -16,6 +16,6 @@ SessionSecret: setOnProduction
 
 
 redis:
-  addr: 118.31.16.35:6379
+  addr: localhost:6379
   pwd: 123456
   db: 0
